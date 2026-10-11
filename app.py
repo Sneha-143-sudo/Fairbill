@@ -2,7 +2,6 @@ import streamlit as st
 from google import genai
 from PIL import Image
 
-# Initialize the Gemini Client (Make sure your API key is pasted below)
 client = genai.Client()
 
 # 1. PAGE CONFIGURATION
@@ -29,7 +28,7 @@ st.title("🧾 FairBill: Your Bills, Decoded.")
 st.markdown("Upload any medical, telecom, or utility bill to instantly expose predatory hidden fees, duplicate charges, or incorrect taxes.")
 st.divider()
 
-# 4. TWO-COLUMN SPLIT LAYOUT (Left for Upload/Preview, Right for AI Report)
+# 4. TWO-COLUMN SPLIT LAYOUT
 col1, col2 = st.columns([1, 1], gap="large")
 
 with col1:
