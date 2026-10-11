@@ -40,7 +40,6 @@ items = [
 
 y_pos = 200
 for date, desc, price in items:
-    # Highlight the scam/junk rows slightly so they look clear to us
     if "Fee" in desc or "Surcharge" in desc or "Duplicate" in desc or "Gauze" in desc:
         d.text((50, y_pos), date, fill="darkred", font=font_body)
         d.text((150, y_pos), desc, fill="darkred", font=font_body)
